@@ -1,5 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PC端与手持移动端的识别</title>
+<script type="text/javascript">
+function browserRedirect() {
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+   
+    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+       window.location.href=https://idpifa.cn;//输入移动端网址
+    } else {
+       window.location.href="https://idpifa.cn"; //输入PC端网址
+    }  
+}
+browserRedirect();
 
-<frameset rows="0, *">
-<frame src="https://idpifa.cn" name="Topbar" frameborder="0" scrolling="no" marginwidth="0" marginheight="0">
-<frame src="https://idpifa.cn" name="Main" frameborder="0" scrolling="yes" marginwidth="0" marginheight="0">
-</frameset>
+</script>
+</head>
+<body>
+</body>
+</html>
